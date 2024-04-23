@@ -1,0 +1,63 @@
+steps:
+  REGION-8cc0ad2f-4ed9-4c89-a47f-db2a6d7e877e:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e5cd0695-8cb0-463f-92a9-94d249fe3d21
+              stepCounter: 8cc0ad2f-4ed9-4c89-a47f-db2a6d7e877e
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 0d834d40-61bf-448a-b929-727c80eca9f6
+              stepCounter: 8cc0ad2f-4ed9-4c89-a47f-db2a6d7e877e
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 77169a45-b9fd-4fb1-81ee-b9871c4a3613
+              stepCounter: 8cc0ad2f-4ed9-4c89-a47f-db2a6d7e877e
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 8cc0ad2f-4ed9-4c89-a47f-db2a6d7e877e
