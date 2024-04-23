@@ -1,6 +1,13 @@
 defaultStorageMapping: SOURCE
 installedPackages: {}
-jobs: {}
+jobs:
+  Job-11:
+    excludeSelector: ""
+    id: 11
+    includeSelector: "+ { location: STAGE name: STG_* }+ OR { location: SOURCE name: *}+"
+    name: test
+    steps: []
+    subgraphs: []
 locations:
   SOURCE:
     mappingDefinitions:
